@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'edit_0046.dart';
-
+import 'HomePage.dart';
 class Lihat_0046 extends StatelessWidget {
   const Lihat_0046({Key? key}) : super(key: key);
 
@@ -17,6 +17,15 @@ class Lihat_0046 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+          icon: Icon(Icons.home, color: Colors.white),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => PageNavBarMenu()),
+            );
+          },
+        ),
         title: Text(
           'Expense Tracker',
           style: TextStyle(color: Colors.white),
@@ -166,7 +175,7 @@ class Lihat_0046 extends StatelessWidget {
         onPressed: () {
           Navigator.of(context).pushNamed('/input');
         },
-        child: Icon(Icons.add),
+        child: Icon(Icons.add, color: Colors.white),
         elevation: 4,
       ),
     );

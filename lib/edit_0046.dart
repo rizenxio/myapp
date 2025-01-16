@@ -235,6 +235,7 @@ class _Edit_0046State extends State<Edit_0046> {
                     child: Text(
                       "Update Expense",
                       style: TextStyle(
+                        color: Colors.white,
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
                       ),

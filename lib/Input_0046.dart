@@ -173,9 +173,8 @@ class _Input_0046State extends State<Input_0046> {
                           SizedBox(height: 16),
                           TextFormField(
                             readOnly: true,
-                            controller: TextEditingController(
-                                text:
-                                    expenseDate ?? ''), 
+                            controller:
+                                TextEditingController(text: expenseDate ?? ''),
                             decoration: InputDecoration(
                               labelText: "Date",
                               prefixIcon: Icon(Icons.calendar_today),
